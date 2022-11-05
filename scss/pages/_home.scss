@@ -1,8 +1,12 @@
+@import "../abstracts/mixins";
+
 * {
   margin: 0;
   padding: 0 ;
 }
-
+.w-96 {
+  width: 96%;
+}
 .loader_bg {
   position: fixed;
   z-index: 999999;
@@ -232,7 +236,7 @@ header {
     background-color: white;
     box-shadow: 0px 73px 80px rgba(0, 0, 0, 0.06);
     border-radius: 30px;
-
+    padding-right: 0px;
     .statistic__box__heading {
       color: #08546C;
       padding-top: 78px;
@@ -403,9 +407,7 @@ header {
 $carousel-color: #ffa800;
 $control-transition-time: 0.5s;
 
-.container {
-  padding: 0;
-}
+
 
 #carousel {
   .carousel-item {
@@ -423,6 +425,7 @@ $control-transition-time: 0.5s;
 
   .carousel-fade .carousel-item.active {
     opacity: 1;
+    height: 608px;
   }
 
 
@@ -511,4 +514,18 @@ $control-transition-time: 0.5s;
 * {
   margin: 0;
   padding: 0 ;
+}
+.container {
+  padding: 0px 20px;
+}
+.published {
+  padding: 12px 40px;
+  border-radius: 30px;
+}
+.published:hover {
+ background-color: #FFF8EB;
+ color: #FFA800;
+}
+.published:active {
+  border: none;
 }

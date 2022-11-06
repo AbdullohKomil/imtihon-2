@@ -11730,4 +11730,20 @@ header {
 
 .published:active {
   border: none;
+}
+
+@media screen and (max-width: 768px) {
+  #carousel .carousel-control-next {
+    top: 723px;
+    right: 15px;
+    left: 316px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .heading__1 {
+    font-size: 40px !important;
+  }
+  .container {
+    padding: 0 !important;
+  }
 }/*# sourceMappingURL=main.css.map */

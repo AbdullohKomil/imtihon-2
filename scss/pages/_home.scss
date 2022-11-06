@@ -2,11 +2,13 @@
 
 * {
   margin: 0;
-  padding: 0 ;
+  padding: 0;
 }
+
 .w-96 {
   width: 96%;
 }
+
 .loader_bg {
   position: fixed;
   z-index: 999999;
@@ -237,6 +239,7 @@ header {
     box-shadow: 0px 73px 80px rgba(0, 0, 0, 0.06);
     border-radius: 30px;
     padding-right: 0px;
+
     .statistic__box__heading {
       color: #08546C;
       padding-top: 78px;
@@ -511,21 +514,46 @@ $control-transition-time: 0.5s;
   border-radius: 30px;
 
 }
+
 * {
   margin: 0;
-  padding: 0 ;
+  padding: 0;
 }
+
 .container {
   padding: 0px 20px;
 }
+
 .published {
   padding: 12px 40px;
   border-radius: 30px;
 }
+
 .published:hover {
- background-color: #FFF8EB;
- color: #FFA800;
+  background-color: #FFF8EB;
+  color: #FFA800;
 }
+
 .published:active {
   border: none;
+}
+
+@media screen and (max-width: 768px) {
+  #carousel .carousel-control-next {
+    top: 723px;
+    right: 15px;
+    left: 316px;
+  }
+}
+
+// .carousel-control-next-icon-icons {
+//   background-image: url(../images/buisnesmen-img__carousel__strelka.svg) !important;
+// }  
+@media screen and (max-width:380px) {
+  .heading__1 {
+    font-size: 40px !important;
+  }
+  .container {
+    padding: 0 !important;
+  }
 }

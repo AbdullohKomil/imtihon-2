@@ -1,5 +1,8 @@
 @import "../abstracts/mixins";
-
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
 * {
   margin: 0;
   padding: 0;
@@ -70,85 +73,6 @@
 .container {
   max-width: 1600px;
 }
-
-@media screen and (min-width:2560px) {
-  .container {
-    max-width: 2500px;
-  }
-
-  .buisnesmen-img {
-    width: auto !important;
-  }
-
-  h2 {
-    font-size: 50px;
-  }
-
-  p,
-  span {
-    font-size: 25px !important;
-  }
-
-  .hero {
-    padding-top: 480px !important;
-  }
-
-  h3 {
-    font-size: 45px !important;
-  }
-
-  a {
-    font-size: 35px;
-  }
-}
-
-@media screen and (min-width:3840px) {
-  .container {
-    max-width: 3800px;
-  }
-
-  .h__650 {
-    height: 650px;
-  }
-
-}
-
-@media screen and (min-width:5760px) {
-  .container {
-    max-width: 5700px;
-  }
-
-  .h__650 {
-    height: 1000px;
-  }
-
-  h2 {
-    font-size: 60px;
-    line-height: normal !important;
-  }
-
-  p,
-  span {
-    font-size: 35px !important;
-    line-height: normal !important;
-  }
-
-  .hero {
-    padding-top: 480px !important;
-    line-height: normal !important;
-  }
-
-  h3 {
-    font-size: 55px !important;
-    line-height: normal !important;
-  }
-
-  a {
-    font-size: 45px;
-    line-height: normal !important;
-  }
-}
-
 .light__txt {
   @include light-text-figma
 }
@@ -556,4 +480,5 @@ $control-transition-time: 0.5s;
   .container {
     padding: 0 !important;
   }
+  .row c
 }
